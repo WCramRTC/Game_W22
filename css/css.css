@@ -1,0 +1,9 @@
+/* Something new: Customer Properties aka CSS variables */
+
+:root {
+    --main-color: red;
+}
+
+* {
+    background-color: var(--main-color);
+}
