@@ -29,7 +29,7 @@ function setupEvents() {
     btnList = document.getElementById('btnList');
     display = document.getElementById('display');
 
-    btnLorem.addEventListener("click", function() { addValue(.1)});
+    btnLorem.addEventListener("click", function() { addValue(1)});
     btnPTag.addEventListener("click", function() { addValue(5)});
     btnHeading.addEventListener("click", function() { addValue(25)});
     btnInline.addEventListener("click", function() { addValue(100)});
