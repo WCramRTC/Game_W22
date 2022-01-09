@@ -38,7 +38,7 @@ ul, ol {
     box-shadow: -2px 2px 3px black;
 }
 
-.grid-item {
+.grid-container > .grid-item {
     box-shadow: inset -2px 2px 3px black;
     padding: 5px;
 }
@@ -47,12 +47,23 @@ ul, ol {
 
 }
 
+.grid-container-left > .grid-item {
+    padding: 0px;
+}
+
 .grid-container-center {
     
 }
 
 .grid-container-right {
     
+}
+
+/* Game Display */
+.gameButtons {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
 }
 
 /* Formatting */
