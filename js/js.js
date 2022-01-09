@@ -14,10 +14,11 @@ let totalScore = 0;
 var stop = false;
 var frameCount = 0;
 let fps, fpsInterval, startTime, now, then, elapsed;
+let targetFps = 10;
 
 window.onload = function() {
     setupEvents();
-    startAnimating(10);
+    startAnimating(targetFps);
 }
 
 function setupEvents() {
@@ -90,7 +91,7 @@ function animate(newtime) {
         var sinceStart = now - startTime;
         var currentFps = Math.round(1000 / (sinceStart / ++frameCount) * 100) / 100;
         // display.textContent = "Elapsed time= " + Math.round(sinceStart / 1000 * 100) / 100 + " secs @ " + currentFps + " fps." + " Score: " + totalScore;
-        totalScore += cps;
+        totalScore += cps  / targetFps;
         display.textContent = "Cps: " + cps + " - Total Score: " + totalScore;
     }
 } // animate
